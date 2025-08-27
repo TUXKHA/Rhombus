@@ -1,0 +1,77 @@
+ .body9ab {
+  width: 100%;
+  background-image: url('../../components/bg/twoBG.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  overflow: hidden;
+}
+.body2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px;
+  box-sizing: border-box;
+}
+
+.table-container {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  border: 3px solid black;
+  border-radius: 8px;
+  width: 600px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.table-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  border-bottom: 2px solid black;
+  padding-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.table-scroll-wrapper {
+  max-height: 270px;
+  overflow-y: auto;
+}
+
+/* Use separate borders instead of collapse to avoid sticky border bugs */
+.scrollable-table {
+  width: 100%;
+  border-spacing: 0; /* spacing between cells */
+  border: 1px solid black;
+}
+
+.scrollable-table th,
+.scrollable-table td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Sticky header fix */
+.scrollable-table th {
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+
+  /* Add bottom border again for visibility */
+  border-bottom: 2px solid black;
+}
+
+/* Optional row background */
+.scrollable-table td {
+  background-color: #fceeee;
+}
+
+/* Optional scrollbar styling */
+.table-scroll-wrapper::-webkit-scrollbar {
+  width: 8px;
+}
+
+.table-scroll-wrapper::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}

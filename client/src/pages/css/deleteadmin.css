@@ -1,0 +1,8 @@
+.body9n {
+  width: 100%;
+  background-image: url('../../components/bg/AdminBG.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  overflow: hidden;
+}

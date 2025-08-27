@@ -1,0 +1,29 @@
+.body9g {
+  width: 100%;
+  background-image: url('../../components/bg/peakpx\ \(1\).jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  overflow: hidden;
+}
+.table-containerz {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  border: 3px solid black;
+  border-radius: 8px;
+  width: 900px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.table-containerz h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  border-bottom: 2px solid black;
+  padding-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.table-scroll-wrapperz {
+  max-height: 320px;
+  overflow-y: auto;
+}
