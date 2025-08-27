@@ -17,7 +17,7 @@ passport.use(
     {
       clientID: process.env.CLIENTID,
       clientSecret: process.env.CLIENTSECRET,
-      callbackURL: "/api/auth/log/google/callback",
+      callbackURL: "https://rhombus-tnso.onrender.com/api/auth/log/google/callback",
       scope: ["profile", "email"],
     },
     async (accessToken, refreshToken, profile, done) => {
