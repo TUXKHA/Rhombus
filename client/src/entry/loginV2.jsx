@@ -99,7 +99,7 @@ function Bh()
 
     const GoogleLogin = () => 
       {
-  window.location.href = "http://localhost:3001/api/auth/log/google/callback";
+  window.location.href = "http://rhombus-tnso.onrender.com/api/auth/log/google/callback";
     }
 
 
