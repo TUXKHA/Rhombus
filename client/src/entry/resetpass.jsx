@@ -11,7 +11,7 @@ function Bh ()
         e.preventDefault()
         const token = window.location.pathname.split("/").pop();
         axios
-        .post(`http://rhombus-tnso.onrender.com/api/auth/reset-password/${token}`, { passer })
+        .post(`https://rhombus-tnso.onrender.com/api/auth/reset-password/${token}`, { passer })
         .then((response) => {
           console.log(response.data.message);
             if(response.data.Status === "Success") {

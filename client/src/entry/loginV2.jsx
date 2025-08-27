@@ -22,7 +22,7 @@ function Bh()
    const handleLogin = (e) => {
     e.preventDefault();
 
-    axios.post("http://rhombus-tnso.onrender.com/api/auth/login", { email, password }, {
+    axios.post("https://rhombus-tnso.onrender.com/api/auth/login", { email, password }, {
         withCredentials: true
     })
     .then(result => {
@@ -55,7 +55,7 @@ function Bh()
           {alert("Password Didnt Match")
           return;
         }
-        axios.post("http://rhombus-tnso.onrender.com/api/auth/signup", {email, password })
+        axios.post("https://rhombus-tnso.onrender.com/api/auth/signup", {email, password })
         .then(result => {
           console.log(result)
         if(result.data === "Success")
@@ -77,7 +77,7 @@ function Bh()
     const handleForgot = (e) => 
       {
     e.preventDefault()
-    axios.post("http://rhombus-tnso.onrender.com/api/auth/forgetPassword", {email})
+    axios.post("https://rhombus-tnso.onrender.com/api/auth/forgetPassword", {email})
     .then(result => 
     {
         console.log(result)
@@ -99,7 +99,7 @@ function Bh()
 
     const GoogleLogin = () => 
       {
-  window.location.href = "http://rhombus-tnso.onrender.com/api/auth/log/google/callback";
+  window.location.href = "https://rhombus-tnso.onrender.com/api/auth/log/google/callback";
     }
 
 

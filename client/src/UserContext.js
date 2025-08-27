@@ -14,7 +14,7 @@ export const UserProvider = ({ children }) => {
 
   // useEffect runs once on mount to fetch user info from /me endpoint
   useEffect(() => {
-    axios.get("http://localhost:3001/api/auth/me", { withCredentials: true })
+    axios.get("https://rhombus-tnso.onrender.com/api/auth/me", { withCredentials: true })
       .then(res => {
         // setUser with the user data received from backend
         setUser(res.data.user);

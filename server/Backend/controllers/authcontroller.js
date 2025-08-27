@@ -833,7 +833,6 @@ export const forgotpassword = async (req, res) => {
       console.log("User Logged In, Token:", token);
       return res.redirect("https://rhombus-tnso.onrender.com/google-success");
     }
-
     // Check for Admin
     const admin = await AdminAccount.findOne({ email: userx.email });
     if (admin) {

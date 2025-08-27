@@ -15,7 +15,7 @@ const server = Express();
 
 server.use(Express.json());
 server.use(cors({
-  origin: 'http://localhost:3000', // frontend URL
+  origin: 'https://rhombus-tnso.onrender.com', // frontend URL
   credentials: true
 }));
 server.use(cookieParser());
