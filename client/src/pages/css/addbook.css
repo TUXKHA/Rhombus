@@ -1,0 +1,8 @@
+.body9a {
+  width: 100%;
+  background-image: url('../../components/bg/YellowBG.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  overflow: hidden;
+}
